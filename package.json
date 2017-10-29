@@ -1,0 +1,44 @@
+{
+  "name": "spectacle-theme-anker",
+  "version": "1.0.0",
+  "description": "🖌  Spectacle theme based on my personal Anker color scheme",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "browser": "out/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "melodrama-scripts start example/index.js",
+    "webpack": "webpack",
+    "tsc": "tsc --outDir out --declaration",
+    "prepare": "rm -rf out && npm run tsc && npm run webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkundel/spectacle-theme-anker.git"
+  },
+  "keywords": [],
+  "author": "Dominik Kundel <dominik.kundel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkundel/spectacle-theme-anker/issues"
+  },
+  "homepage": "https://github.com/dkundel/spectacle-theme-anker#readme",
+  "devDependencies": {
+    "@types/react": "^16.0.10",
+    "@types/spectacle": "^1.2.0",
+    "melodrama-scripts": "^2.1.1",
+    "react": "^16.0.0",
+    "style-loader": "^0.19.0",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "anker-colors": "^1.4.0",
+    "deep-assign": "^2.0.0",
+    "hex-rgb": "^1.0.0",
+    "normalize.css": "^7.0.0",
+    "prismjs": "^1.8.1",
+    "spectacle": "^2.2.2"
+  }
+}
