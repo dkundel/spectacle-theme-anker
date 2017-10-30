@@ -98,15 +98,17 @@ function screen(flavor: Flavor, custom = {}) {
       },
       content: {
         margin: '0 auto',
-        textAlign: 'center'
+        textAlign: 'center',
+        maxHeight: 1080,
+        maxWidth: 1600
       },
       heading: {
         h1: header({
-          fontSize: '7rem',
+          fontSize: '6rem',
           textTransform: 'uppercase'
         }),
         h2: header({
-          fontSize: '5rem',
+          fontSize: '4rem',
           textTransform: 'uppercase'
         }),
         h3: header({
@@ -165,12 +167,13 @@ function screen(flavor: Flavor, custom = {}) {
         lineHeight: 1,
         background: anker.lightGray,
         padding: '6px 5px 3px',
-        borderRadius: '2px'
+        borderRadius: '2px',
+        textTransform: 'none'
       },
       codePane: {
         pre: {
           margin: 'auto',
-          fontSize: '0.8rem',
+          fontSize: '1rem',
           fontWeight: 'normal',
           fontFamily: fonts.code,
           minWidth: '100%',
@@ -178,7 +181,8 @@ function screen(flavor: Flavor, custom = {}) {
         },
         code: {
           textAlign: 'left',
-          fontWeight: 'normal'
+          fontWeight: 'normal',
+          fontSize: '26px'
         }
       }
     },
