@@ -1,6 +1,6 @@
 {
   "name": "spectacle-theme-anker",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "🖌  Spectacle theme based on my personal Anker color scheme",
   "main": "out/index.js",
   "types": "out/index.d.ts",
