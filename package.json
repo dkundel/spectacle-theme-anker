@@ -10,7 +10,8 @@
     "start": "melodrama-scripts start example/index.js",
     "webpack": "webpack",
     "tsc": "tsc --outDir out --declaration",
-    "prepare": "rm -rf out && npm run tsc && npm run webpack"
+    "prepare": "npm run snyk-protect && rm -rf out && npm run tsc && npm run webpack",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,8 @@
     "hex-rgb": "^1.0.0",
     "normalize.css": "^7.0.0",
     "prismjs": "^1.8.1",
-    "spectacle": "^3.0.0"
-  }
+    "spectacle": "^3.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
